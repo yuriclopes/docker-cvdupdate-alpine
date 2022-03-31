@@ -27,7 +27,7 @@ jobs:
         run: docker run --name test-image -d test-image sleep 120
 
       - name: "[TEST] Verify Image"
-        run: docker exec --tty test-image env TERM=xterm pip list |grep cvdupdate
+        run: docker exec --tty test-image --help
 
   release_image:
     name: Release
