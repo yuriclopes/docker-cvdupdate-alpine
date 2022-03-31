@@ -1,5 +1,7 @@
 FROM python:alpine
 
+LABEL maintainer="yuriclopes"
+
 RUN apk upgrade -U -a \
     && apk add \
     python3 \
